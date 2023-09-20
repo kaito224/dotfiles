@@ -1,0 +1,5 @@
+set nu
+set cursorline
+colorscheme torte
+filetype plugin on
+syntax on
