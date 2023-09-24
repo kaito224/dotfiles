@@ -3,20 +3,22 @@
 
 # make sxhkd reload its configuration files:
 super + Escape
-
 	pkill -USR1 -x sxhkd
 
+# set x keyboard-layout to german
+super + Tab
+	setxkbmap de
 
 
 ###---LAUNCHING PROGRAMS---####
 
 # program launcher
 super + d 
-	rofi -drun
+	rofi -show drun
 
 # terminal emulator
 super + {_, shift +} Return
-	{kitty,	 bspc rule -a kitty -o  state=floating sticky=on rectangle=900x400+500+300 && kitty -o background_opacity=1.0}
+	{kitty,	 bspc rule -a kitty -o  state=floating sticky=on rectangle=720x360+600+26 && kitty -o background_opacity=1.0}
 
 #system monitoring
 super + r
@@ -29,7 +31,9 @@ super + w
 super + shift + w
 	firefox --private-window
 
-
+# file manager
+super + n
+	kitty ranger
 
 ###---BSPWM HOTKEYS---###
 

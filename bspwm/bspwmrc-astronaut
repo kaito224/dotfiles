@@ -20,4 +20,4 @@ bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
 #color theming
-bspc config focused_border_color "#32c5fe" 
+bspc config focused_border_color "#fecc32" 
