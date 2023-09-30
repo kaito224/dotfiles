@@ -35,6 +35,10 @@ super + shift + w
 super + n
 	kitty ranger
 
+#sound mixer
+super + {_, shift +} p 
+	{kitty pulsemixer, bspc rule -a kitty -o  state=floating sticky=on rectangle=720x360+600+26 && kitty -o background_opacity=1.0 pulsemixer}
+
 ###---BSPWM HOTKEYS---###
 
 # quit/restart bspwm
@@ -82,7 +86,7 @@ super + {_,shift + }{h,j,k,l}
 	bspc node -{f,s} {west,south,north,east}
 
 # focus the node for the given path jump
-super + {p,b,comma,period}
+super + {a,b,comma,period}
 	bspc node -f @{parent,brother,first,second}
 
 # focus the next/previous window in the current desktop
