@@ -39,6 +39,16 @@ super + n
 super + {_, shift +} p 
 	{kitty pulsemixer, bspc rule -a kitty -o  state=floating sticky=on rectangle=720x360+600+26 && kitty -o background_opacity=1.0 pulsemixer}
 
+
+###---Miscellaneous---###
+# sets the volume for sink 0 and not the default sink !!!
+super + {_, shift +} plus
+	{pactl set-sink-volume 0 +5%, pactl set-sink-volume 0 +15%}
+
+super + {_, shift +} minus
+	{pactl set-sink-volume 0 -5%, pactl set-sink-volume 0 -15%} 
+
+
 ###---BSPWM HOTKEYS---###
 
 # quit/restart bspwm
