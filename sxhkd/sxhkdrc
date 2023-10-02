@@ -41,15 +41,31 @@ super + {_, shift +} p
 
 
 ###---Miscellaneous---###
+
+#sound
 # sets the volume for sink 0 and not the default sink !!!
 super + {_, shift +} plus
 	{pactl set-sink-volume 0 +5%, pactl set-sink-volume 0 +15%}
+XF86AudioRaiseVolume
+	pactl set-sink-volume 0 +5%
 
 super + {_, shift +} minus
 	{pactl set-sink-volume 0 -5%, pactl set-sink-volume 0 -15%} 
+XF86AudioRaiseVolume
+	pactl set-sink-volume 0 -5%
+
 #mute or unmut
 super + {_, shift +} m
 	{pactl set-sink-mute 0 1, pactl set-sink-mute 0 0} 
+XF86AudioMute
+	pactl set-sink-mute 0 1
+	
+#backlight
+XF86MonBrightnessUp
+	light -A 10
+
+XF86MonBrightnessDown
+	light -U 10
 
 
 ###---BSPWM HOTKEYS---###
