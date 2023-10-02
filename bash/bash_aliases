@@ -1,2 +1,3 @@
 alias ls='ls --color=auto'                             
 alias grep='grep --color=auto'
+alias unlockme='faillock --user $USER --reset'
