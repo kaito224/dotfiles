@@ -46,11 +46,13 @@ super + {_, shift +} p
 # sets the volume for sink 0 and not the default sink !!!
 super + {_, shift +} plus
 	{pactl set-sink-volume 0 +5%, pactl set-sink-volume 0 +15%}
+
 XF86AudioRaiseVolume
 	pactl set-sink-volume 0 +5%
 
 super + {_, shift +} minus
 	{pactl set-sink-volume 0 -5%, pactl set-sink-volume 0 -15%} 
+
 XF86AudioRaiseVolume
 	pactl set-sink-volume 0 -5%
 
