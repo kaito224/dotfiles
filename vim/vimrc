@@ -1,5 +1,6 @@
 set nu
 set cursorline
+set ignorecase
 colorscheme torte
 filetype plugin on
 syntax on
