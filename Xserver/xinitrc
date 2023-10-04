@@ -52,7 +52,8 @@ xrandr -s 1920x1080
 picom -f &
 setxkbmap de
 sxhkd &
-spice-vdagent & #omit this line, if the script is not used on an vm that uses spice
 nitrogen --restore
 polybar &
+nm-applet &
+#spice-vdagent  #uncomment when using a vm and spice
 exec bspwm
