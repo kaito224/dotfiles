@@ -56,4 +56,5 @@ nitrogen --restore
 polybar &
 nm-applet &
 #spice-vdagent  #uncomment when using a vm and spice
+blueman-applet &
 exec bspwm
