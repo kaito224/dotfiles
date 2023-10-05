@@ -43,22 +43,24 @@ super + {_, shift +} p
 ###---Miscellaneous---###
 
 #sound
-# sets the volume for sink 0 and not the default sink !!!
+# super +/- changes sound settings for the deafault sink
+# xf86 keys change sound settings for sink 0 i.e. the laptop speakers
 super + {_, shift +} plus
-	{pactl set-sink-volume 0 +5%, pactl set-sink-volume 0 +15%}
+	{pactl set-sink-volume $(pactl get-default-sink) +5%, pactl set-sink-volume $(pactl get-default-sink) +10%}
 
 XF86AudioRaiseVolume
 	pactl set-sink-volume 0 +5%
 
 super + {_, shift +} minus
-	{pactl set-sink-volume 0 -5%, pactl set-sink-volume 0 -15%} 
+	{pactl set-sink-volume $(pactl get-default-sink) -5%, pactl set-sink-volume $(pactl get-default-sink) -10%} 
 
-XF86AudioRaiseVolume
+XF86AudioLowerVolume
 	pactl set-sink-volume 0 -5%
 
 #mute or unmut
 super + {_, shift +} m
-	{pactl set-sink-mute 0 1, pactl set-sink-mute 0 0} 
+	{pactl set-sink-mute $(pactl get-default-sink) 1, pactl set-sink-mute $(pactl get-default-sink) 0} 
+
 XF86AudioMute
 	pactl set-sink-mute 0 1
 	
