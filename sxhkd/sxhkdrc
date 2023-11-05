@@ -31,6 +31,13 @@ super + w
 super + shift + w
 	firefox --private-window
 
+super + e
+	brave	
+
+super + shift + e
+	brave --incognito	
+
+
 # file manager
 super + n
 	kitty ranger
