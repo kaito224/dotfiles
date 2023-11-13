@@ -63,7 +63,7 @@ super + {_, shift +} minus
 XF86AudioLowerVolume
 	pactl set-sink-volume 0 -5%
 
-#mute or unmut
+#mute or unmute
 super + {_, shift +} m
 	{pactl set-sink-mute $(pactl get-default-sink) 1, pactl set-sink-mute $(pactl get-default-sink) 0} 
 
