@@ -32,11 +32,7 @@ super + shift + w
 	firefox --private-window
 
 super + e
-	brave	
-
-super + shift + e
-	brave --incognito	
-
+	firefox -p uni 
 
 # file manager
 super + n
