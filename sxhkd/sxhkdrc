@@ -45,6 +45,11 @@ super + n
 super + {_, shift +} p 
 	{kitty pulsemixer, bspc rule -a kitty -o  state=floating sticky=on rectangle=720x360+600+26 && kitty -o background_opacity=1.0 pulsemixer}
 
+#screenshots
+super +{_, shift +} x
+	{maim_screenshot_name=$(date +%s) && maim  $HOME/Pictures/Screenshots/$maim_screenshot_name.png && rofi -e "Screenshot $maim_screenshot_name saved", maim_screenshot_name=$(date +%s) && maim -s $HOME/Pictures/Screenshots/$maim_screenshot_name.png && rofi -e "Screenshot $maim_screenshot_name saved"}
+
+
 
 ###---Miscellaneous---###
 
