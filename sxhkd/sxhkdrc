@@ -44,6 +44,9 @@ super + e
 super + n
 	kitty ranger
 
+super + shift + n
+	nautilus
+
 #sound mixer
 super + {_, shift +} p 
 	{kitty pulsemixer, bspc rule -a kitty -o  state=floating sticky=on rectangle=720x360+600+26 && kitty -o background_opacity=1.0 pulsemixer}
