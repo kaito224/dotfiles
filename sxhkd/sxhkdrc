@@ -40,6 +40,9 @@ super + shift + w
 super + e
 	firefox -p uni 
 
+super + shift + e
+	firefox -p busisness
+
 # file manager
 super + n
 	kitty ranger
