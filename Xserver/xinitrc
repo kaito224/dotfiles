@@ -59,4 +59,5 @@ nm-applet &
 blueman-applet &
 udiskie --smart-tray &
 keepassxc &
+exec Nextcloud-3.11.0-x86_64.AppImage &
 exec bspwm
