@@ -14,7 +14,7 @@ super + Tab
 
 # program launcher
 super + d 
-	rofi -show drun
+	rofi -show drun -show-icons
 
 super + shift + d 
 	rofi -show run
