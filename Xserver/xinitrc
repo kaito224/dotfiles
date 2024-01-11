@@ -59,5 +59,6 @@ nm-applet &
 blueman-applet &
 udiskie --smart-tray &
 keepassxc &
+gnome-keyring-daemon -r -d &
 exec Nextcloud-3.11.0-x86_64.AppImage &
 exec bspwm
