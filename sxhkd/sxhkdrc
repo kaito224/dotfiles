@@ -1,4 +1,3 @@
-
 ###---WM INDEPENDENT HOTKEYS---####
 
 # make sxhkd reload its configuration files:
@@ -26,10 +25,13 @@ super + {_, shift +} Return
 #power menu
 XF86PowerOff
 	rofi -show powermenu -modes "powermenu:rofi-powermenu.sh"	
+
 #system monitoring
 super + r
 	kitty htop
 
+super + shift + r
+	kitty btop
 # browser
 super + w
 	firefox
@@ -111,12 +113,12 @@ super + shift + f
 	bspc desktop -l next
 
 # send the newest marked node to the newest preselected node
-super + y
-	bspc node newest.marked.local -n newest.!automatic.local
+#super + y
+#	bspc node newest.marked.local -n newest.!automatic.local
 
 # swap the current node and the biggest window
-super + g
-	bspc node -s biggest.window
+#super + g
+#	bspc node -s biggest.window
 
 #
 # state/flags

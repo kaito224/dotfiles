@@ -40,7 +40,6 @@ picom -f &
 setxkbmap de
 sxhkd &
 nitrogen --restore
-polybar &
 nm-applet &
 #spice-vdagent  #uncomment when using a vm and spice
 blueman-applet &
