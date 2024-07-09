@@ -32,6 +32,7 @@ super + r
 
 super + shift + r
 	kitty btop
+
 # browser
 super + w
 	firefox
